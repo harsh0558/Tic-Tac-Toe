@@ -109,7 +109,7 @@ function turn_checker(innerDiv,x,y){
             turn ="cross";
             matrix[x][y] = "o";
             turns_taken++;
-            setTimeout(check,1);
+            setTimeout(check,1000);
         }else if(turn==="cross"){
             innerDiv.style.border = "none";
             innerDiv.innerText ="x";
@@ -121,7 +121,7 @@ function turn_checker(innerDiv,x,y){
             turn = "circle";
             matrix[x][y] = "x";
             turns_taken++;
-            setTimeout(check,1);
+            setTimeout(check,1000);
         }
     }
 }
