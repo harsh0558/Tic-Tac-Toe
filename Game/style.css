@@ -6,6 +6,7 @@ body{
     align-items: center;
     flex-direction: column;
     background-color: #0D0D0D;
+    height : 100vh;
 }
 
 h1{
