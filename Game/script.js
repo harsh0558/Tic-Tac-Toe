@@ -152,7 +152,7 @@ function turn_checker(innerDiv,x,y){
             innerDiv.style.color = "#F2E7DC";
             innerDiv.style.textAlign = "center";
             innerDiv.style.fontSize = "90px";
-            innerDiv.style.fontWeight = "40"; 
+            innerDiv.style.fontWeight = "80"; 
             turn = "circle";
             matrix[x][y] = "x";
             turns_taken++;
