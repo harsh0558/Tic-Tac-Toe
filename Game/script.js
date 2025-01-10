@@ -19,60 +19,95 @@ let cube8 = document.querySelector("#cube_8");
 let cube9 = document.querySelector("#cube_9");
 
 
-function check(){
+function check() {
     if (matrix[0][0] === "x" && matrix[0][1] === "x" && matrix[0][2] === "x") {
-        alert("PLAYER WITH CROSS WON");
-        location.reload();
+        setTimeout(() => {
+            alert("PLAYER WITH CROSS WON");
+            location.reload();
+        }, 1000);
     } else if (matrix[1][0] === "x" && matrix[1][1] === "x" && matrix[1][2] === "x") {
-        alert("PLAYER WITH CROSS WON");
-        location.reload();
+        setTimeout(() => {
+            alert("PLAYER WITH CROSS WON");
+            location.reload();
+        }, 1000);
     } else if (matrix[2][0] === "x" && matrix[2][1] === "x" && matrix[2][2] === "x") {
-        alert("PLAYER WITH CROSS WON");
-        location.reload();
+        setTimeout(() => {
+            alert("PLAYER WITH CROSS WON");
+            location.reload();
+        }, 1000);
     } else if (matrix[0][0] === "x" && matrix[1][1] === "x" && matrix[2][2] === "x") {
-        alert("PLAYER WITH CROSS WON");
-        location.reload();
+        setTimeout(() => {
+            alert("PLAYER WITH CROSS WON");
+            location.reload();
+        }, 1000);
     } else if (matrix[0][2] === "x" && matrix[1][1] === "x" && matrix[2][0] === "x") {
-        alert("PLAYER WITH CROSS WON");
-        location.reload();
+        setTimeout(() => {
+            alert("PLAYER WITH CROSS WON");
+            location.reload();
+        }, 1000);
     } else if (matrix[0][0] === "x" && matrix[1][0] === "x" && matrix[2][0] === "x") {
-        alert("PLAYER WITH CROSS WON");
-        location.reload();
+        setTimeout(() => {
+            alert("PLAYER WITH CROSS WON");
+            location.reload();
+        }, 1000);
     } else if (matrix[0][1] === "x" && matrix[1][1] === "x" && matrix[2][1] === "x") {
-        alert("PLAYER WITH CROSS WON");
-        location.reload();
+        setTimeout(() => {
+            alert("PLAYER WITH CROSS WON");
+            location.reload();
+        }, 1000);
     } else if (matrix[0][2] === "x" && matrix[1][2] === "x" && matrix[2][2] === "x") {
-        alert("PLAYER WITH CROSS WON");
-        location.reload();
+        setTimeout(() => {
+            alert("PLAYER WITH CROSS WON");
+            location.reload();
+        }, 1000);
     } else if (matrix[0][0] === "o" && matrix[0][1] === "o" && matrix[0][2] === "o") {
-        alert("PLAYER WITH CIRCLE WON");
-        location.reload();
+        setTimeout(() => {
+            alert("PLAYER WITH CIRCLE WON");
+            location.reload();
+        }, 1000);
     } else if (matrix[1][0] === "o" && matrix[1][1] === "o" && matrix[1][2] === "o") {
-        alert("PLAYER WITH CIRCLE WON");
-        location.reload();
+        setTimeout(() => {
+            alert("PLAYER WITH CIRCLE WON");
+            location.reload();
+        }, 1000);
     } else if (matrix[2][0] === "o" && matrix[2][1] === "o" && matrix[2][2] === "o") {
-        alert("PLAYER WITH CIRCLE WON");
-        location.reload();
+        setTimeout(() => {
+            alert("PLAYER WITH CIRCLE WON");
+            location.reload();
+        }, 1000);
     } else if (matrix[0][0] === "o" && matrix[1][1] === "o" && matrix[2][2] === "o") {
-        alert("PLAYER WITH CIRCLE WON");
-        location.reload();
+        setTimeout(() => {
+            alert("PLAYER WITH CIRCLE WON");
+            location.reload();
+        }, 1000);
     } else if (matrix[0][2] === "o" && matrix[1][1] === "o" && matrix[2][0] === "o") {
-        alert("PLAYER WITH CIRCLE WON");
-        location.reload();
+        setTimeout(() => {
+            alert("PLAYER WITH CIRCLE WON");
+            location.reload();
+        }, 1000);
     } else if (matrix[0][0] === "o" && matrix[1][0] === "o" && matrix[2][0] === "o") {
-        alert("PLAYER WITH CIRCLE WON");
-        location.reload();
+        setTimeout(() => {
+            alert("PLAYER WITH CIRCLE WON");
+            location.reload();
+        }, 1000);
     } else if (matrix[0][1] === "o" && matrix[1][1] === "o" && matrix[2][1] === "o") {
-        alert("PLAYER WITH CIRCLE WON");
-        location.reload();
+        setTimeout(() => {
+            alert("PLAYER WITH CIRCLE WON");
+            location.reload();
+        }, 1000);
     } else if (matrix[0][2] === "o" && matrix[1][2] === "o" && matrix[2][2] === "o") {
-        alert("PLAYER WITH CIRCLE WON");
-        location.reload();
+        setTimeout(() => {
+            alert("PLAYER WITH CIRCLE WON");
+            location.reload();
+        }, 1000);
     } else if (turns_taken === 9) {
-        alert("ITS A DRAW");
-        location.reload();
+        setTimeout(() => {
+            alert("ITS A DRAW");
+            location.reload();
+        }, 1000);
     }
 }
+
 
 function turn_checker(innerDiv,x,y){
     if(window.innerWidth>650){
@@ -85,7 +120,7 @@ function turn_checker(innerDiv,x,y){
             turn ="cross";
             matrix[x][y] = "o";
             turns_taken++;
-            setTimeout(check,1000);
+            setTimeout(check,1);
         }else if(turn==="cross"){
             innerDiv.style.border = "none";
             innerDiv.innerText ="x";
@@ -97,7 +132,7 @@ function turn_checker(innerDiv,x,y){
             turn = "circle";
             matrix[x][y] = "x";
             turns_taken++;
-            setTimeout(check,1000);
+            setTimeout(check,1);
         }
     }else if(window.innerWidth<=650){
         if(turn==="circle"){
@@ -109,7 +144,7 @@ function turn_checker(innerDiv,x,y){
             turn ="cross";
             matrix[x][y] = "o";
             turns_taken++;
-            setTimeout(check,1000);
+            setTimeout(check,1);
         }else if(turn==="cross"){
             innerDiv.style.border = "none";
             innerDiv.innerText ="x";
@@ -121,7 +156,7 @@ function turn_checker(innerDiv,x,y){
             turn = "circle";
             matrix[x][y] = "x";
             turns_taken++;
-            setTimeout(check,1000);
+            setTimeout(check,1);
         }
     }
 }
