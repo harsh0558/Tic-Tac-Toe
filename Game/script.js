@@ -24,27 +24,27 @@ function check() {
         setTimeout(() => {
             alert("PLAYER WITH CROSS WON");
             location.reload();
-        }, 1000);
+        }, 200);
     } else if (matrix[1][0] === "x" && matrix[1][1] === "x" && matrix[1][2] === "x") {
         setTimeout(() => {
             alert("PLAYER WITH CROSS WON");
             location.reload();
-        }, 1000);
+        }, 200);
     } else if (matrix[2][0] === "x" && matrix[2][1] === "x" && matrix[2][2] === "x") {
         setTimeout(() => {
             alert("PLAYER WITH CROSS WON");
             location.reload();
-        }, 1000);
+        }, 200);
     } else if (matrix[0][0] === "x" && matrix[1][1] === "x" && matrix[2][2] === "x") {
         setTimeout(() => {
             alert("PLAYER WITH CROSS WON");
             location.reload();
-        }, 1000);
+        }, 200);
     } else if (matrix[0][2] === "x" && matrix[1][1] === "x" && matrix[2][0] === "x") {
         setTimeout(() => {
             alert("PLAYER WITH CROSS WON");
             location.reload();
-        }, 1000);
+        }, 200);
     } else if (matrix[0][0] === "x" && matrix[1][0] === "x" && matrix[2][0] === "x") {
         setTimeout(() => {
             alert("PLAYER WITH CROSS WON");
@@ -54,17 +54,17 @@ function check() {
         setTimeout(() => {
             alert("PLAYER WITH CROSS WON");
             location.reload();
-        }, 1000);
+        }, 200);
     } else if (matrix[0][2] === "x" && matrix[1][2] === "x" && matrix[2][2] === "x") {
         setTimeout(() => {
             alert("PLAYER WITH CROSS WON");
             location.reload();
-        }, 1000);
+        }, 200);
     } else if (matrix[0][0] === "o" && matrix[0][1] === "o" && matrix[0][2] === "o") {
         setTimeout(() => {
             alert("PLAYER WITH CIRCLE WON");
             location.reload();
-        }, 1000);
+        }, 200);
     } else if (matrix[1][0] === "o" && matrix[1][1] === "o" && matrix[1][2] === "o") {
         setTimeout(() => {
             alert("PLAYER WITH CIRCLE WON");
@@ -74,7 +74,7 @@ function check() {
         setTimeout(() => {
             alert("PLAYER WITH CIRCLE WON");
             location.reload();
-        }, 1000);
+        }, 200);
     } else if (matrix[0][0] === "o" && matrix[1][1] === "o" && matrix[2][2] === "o") {
         setTimeout(() => {
             alert("PLAYER WITH CIRCLE WON");
@@ -84,7 +84,7 @@ function check() {
         setTimeout(() => {
             alert("PLAYER WITH CIRCLE WON");
             location.reload();
-        }, 1000);
+        }, 200);
     } else if (matrix[0][0] === "o" && matrix[1][0] === "o" && matrix[2][0] === "o") {
         setTimeout(() => {
             alert("PLAYER WITH CIRCLE WON");
@@ -94,17 +94,17 @@ function check() {
         setTimeout(() => {
             alert("PLAYER WITH CIRCLE WON");
             location.reload();
-        }, 1000);
+        }, 200);
     } else if (matrix[0][2] === "o" && matrix[1][2] === "o" && matrix[2][2] === "o") {
         setTimeout(() => {
             alert("PLAYER WITH CIRCLE WON");
             location.reload();
-        }, 1000);
+        }, 200);
     } else if (turns_taken === 9) {
         setTimeout(() => {
             alert("ITS A DRAW");
             location.reload();
-        }, 1000);
+        }, 200);
     }
 }
 
