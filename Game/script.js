@@ -112,23 +112,25 @@ function check() {
 function turn_checker(innerDiv,x,y){
     if(window.innerWidth>650){
         if(turn==="circle"){
-            innerDiv.style.height = "100px";
-            innerDiv.style.width = "100px";
-            innerDiv.style.borderRadius = "50%";
-            innerDiv.style.borderColor = "#F2E7DC";
-            innerDiv.style.borderWidth = "12px";
-            turn ="cross";
+            innerDiv.style.border = "none";
+            innerDiv.innerText ="O";
+            innerDiv.style.fontFamily = "Roboto, sans-serif";
+            innerDiv.style.color = "#F2E7DC";
+            innerDiv.style.textAlign = "center";
+            innerDiv.style.fontSize = "120px";
+            innerDiv.style.fontWeight = "40";
+            turn = "cross";
             matrix[x][y] = "o";
             turns_taken++;
             setTimeout(check,1);
         }else if(turn==="cross"){
             innerDiv.style.border = "none";
-            innerDiv.innerText ="x";
+            innerDiv.innerText ="X";
             innerDiv.style.fontFamily = "Roboto, sans-serif";
             innerDiv.style.color = "#F2E7DC";
             innerDiv.style.textAlign = "center";
-            innerDiv.style.fontSize = "180px";
-            innerDiv.style.fontWeight = "80"; 
+            innerDiv.style.fontSize = "110px";
+            innerDiv.style.fontWeight = "40"; 
             turn = "circle";
             matrix[x][y] = "x";
             turns_taken++;
@@ -136,22 +138,24 @@ function turn_checker(innerDiv,x,y){
         }
     }else if(window.innerWidth<=650){
         if(turn==="circle"){
-            innerDiv.style.height = "50px";
-            innerDiv.style.width = "50px";
-            innerDiv.style.borderRadius = "50%";
-            innerDiv.style.borderColor = "#F2E7DC";
-            innerDiv.style.borderWidth = "6px";
+            innerDiv.style.border = "none";
+            innerDiv.innerText ="O";
+            innerDiv.style.fontFamily = "Roboto, sans-serif";
+            innerDiv.style.color = "#F2E7DC";
+            innerDiv.style.textAlign = "center";
+            innerDiv.style.fontSize = "50px";
+            innerDiv.style.fontWeight = "80"; 
             turn ="cross";
             matrix[x][y] = "o";
             turns_taken++;
             setTimeout(check,1);
         }else if(turn==="cross"){
             innerDiv.style.border = "none";
-            innerDiv.innerText ="x";
+            innerDiv.innerText ="X";
             innerDiv.style.fontFamily = "Roboto, sans-serif";
             innerDiv.style.color = "#F2E7DC";
             innerDiv.style.textAlign = "center";
-            innerDiv.style.fontSize = "90px";
+            innerDiv.style.fontSize = "40px";
             innerDiv.style.fontWeight = "80"; 
             turn = "circle";
             matrix[x][y] = "x";
