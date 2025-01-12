@@ -17,6 +17,7 @@ let cube6 = document.querySelector("#cube_6");
 let cube7 = document.querySelector("#cube_7");
 let cube8 = document.querySelector("#cube_8");
 let cube9 = document.querySelector("#cube_9");
+let btn = document.querySelector("#btn");
 
 
 function check() {
@@ -165,49 +166,71 @@ function turn_checker(innerDiv,x,y){
     }
 }
 
+btn.onclick =() =>{
+    location.reload();
+}
+
 cube1.onclick = () =>{
-    let innerDiv = document.querySelector("#inner_1");
-    turn_checker(innerDiv,0,0);
+    if(matrix[0][0]!=="x" && matrix[0][0]!=="o"){
+        let innerDiv = document.querySelector("#inner_1");
+        turn_checker(innerDiv,0,0);
+    }
 }
 
 cube2.onclick = () =>{
-    let innerDiv = document.querySelector("#inner_2");
-    turn_checker(innerDiv,0,1);
+    if(matrix[0][1]!=="x" && matrix[0][1]!=="o"){
+        let innerDiv = document.querySelector("#inner_2");
+        turn_checker(innerDiv,0,1);
+    }
 }
 
 cube3.onclick = () =>{
-    let innerDiv = document.querySelector("#inner_3");
-    turn_checker(innerDiv,0,2);
+    if(matrix[0][2]!=="x" && matrix[0][2]!=="o"){
+        let innerDiv = document.querySelector("#inner_3");
+        turn_checker(innerDiv,0,2);
+    }
 }
 
 cube4.onclick = () =>{
-    let innerDiv = document.querySelector("#inner_4");
-    turn_checker(innerDiv,1,0);
+    if(matrix[1][0]!=="x" && matrix[1][0]!=="o"){
+        let innerDiv = document.querySelector("#inner_4");
+        turn_checker(innerDiv,1,0);
+    }
 }
 
 cube5.onclick = () =>{
-    let innerDiv = document.querySelector("#inner_5");
-    turn_checker(innerDiv,1,1);
+    if(matrix[1][1]!=="x" && matrix[1][1]!=="o"){
+        let innerDiv = document.querySelector("#inner_5");
+        turn_checker(innerDiv,1,1);
+    }
 }
 
 cube6.onclick = () =>{
-    let innerDiv = document.querySelector("#inner_6");
-    turn_checker(innerDiv,1,2);
+    if(matrix[1][2]!=="x" && matrix[1][2]!=="o"){
+        let innerDiv = document.querySelector("#inner_6");
+        turn_checker(innerDiv,1,2);
+    }
 }
 
 cube7.onclick = () =>{
-    let innerDiv = document.querySelector("#inner_7");
-    turn_checker(innerDiv,2,0);
+    if(matrix[2][0]!=="x" && matrix[2][0]!=="o"){
+        let innerDiv = document.querySelector("#inner_7");
+        turn_checker(innerDiv,2,0);
+    }
 }
 
 cube8.onclick = () =>{
-    let innerDiv = document.querySelector("#inner_8");
-    turn_checker(innerDiv,2,1);
+    if(matrix[2][1]!=="x" && matrix[2][1]!=="o"){
+        let innerDiv = document.querySelector("#inner_8");
+        turn_checker(innerDiv,2,1);
+    }
 }
 
 cube9.onclick = () =>{
-    let innerDiv = document.querySelector("#inner_9");
-    turn_checker(innerDiv,2,2);
+    if(matrix[2][2]!=="x" && matrix[2][2]!=="o"){
+        let innerDiv = document.querySelector("#inner_9");
+        turn_checker(innerDiv,2,2);
+    }
 }
 
 
