@@ -32,15 +32,15 @@ div{
 }
 
 #main{
-    height: 640px;
-    width: 620px;
+    height: 535px;
+    width: 510px;
     background-color: #027373;
 }
 
 #first_row{
     border: none;
-    width : 600px;
-    height : 200px;
+    width : 490px;
+    height : 165px;
     display: flex;
     margin: 10px;
     background-color: #A9D9D0;
@@ -48,8 +48,8 @@ div{
 
 #second_row{
     border: none;
-    width : 600px;
-    height : 200px;
+    width : 490px;
+    height : 165px;
     display: flex;
     margin: 10px;
     background-color: #A9D9D0;
@@ -57,8 +57,8 @@ div{
 
 #third_row{
     border: none;
-    width : 600px;
-    height : 200px;
+    width : 490px;
+    height : 165px;
     display: flex;
     margin: 10px;
     background-color: #A9D9D0;
@@ -66,8 +66,8 @@ div{
 
 .cube{
 
-    height : 170px;
-    width: 200px;
+    height : 140px;
+    width: 140px;
     margin: 10px;
     background-color: #038C7F;
     display: flex;
@@ -112,5 +112,6 @@ div{
 
     }
 }
+
 
 
